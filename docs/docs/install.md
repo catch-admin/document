@@ -34,6 +34,7 @@ curl -sS http://install.phpcomposer.com/installer | php
 composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
 
 // 安装 composer 扩展
+// tip:在Windows平台开发的同学需要注意，本项目计划任务模块依赖pcntl扩展，Win下无法正常安装，请在composer.json中移除pcntl扩展，Win平台下计划任务将无法运行，望周知。
 coomposer install
 
 // 安装后台, 按照提示输入对应信息即可
