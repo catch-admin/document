@@ -1,4 +1,4 @@
-# 目录
+# 目录结构
 使用 `tp6` 开发，可以脱离 `app` 目录，本项目就是很好的例子，如果你的思维局限在 `app` 目录下，这将会给你一个很好范例，重新认识 `Tp`。而且在开发该项目时，弱化了多应用，取而代之是路由。
 ## 目录结构
 ```sh
@@ -18,10 +18,10 @@
 |-- view
 ```
 
-## catchAdmin 核心目录
-该目录是真正的开发目录，当然如果你不喜欢在此开发，也可以在 `app` 下开发，并没有什么影响。下面来说明目录结构。以`permissions`目录为例
+## 核心目录
+该目录是真正的开发目录，当然如果你不喜欢在此开发，也可以在 `app` 下开发，并没有什么影响。下面来说明目录结构。以`permissions`目录为例 (关于在 `app` 目录下进行多应用的开发, 请查看[tp多应用开发](https://www.kancloud.cn/manual/thinkphp6_0/1297876))
 ```sh
-|-- catchAdmin
+|-- catch
    |-- permissions
       |-- controller
       |-- model
@@ -66,8 +66,25 @@
 - `command` 目录存在 console 命令
 - `event` 目录存在事件
 - `exceptions` 目录存放自定义异常类
+- `exceptions` 目录存放自定义 facade 门面
+- `generate` 目录存放文件生成功能
+- `library` 目录存放插件
+  - client Http 客户端
+  - crontab 定时任务功能
+  - excel Excel功能
+  - rate 接口速率限制
+  - BackupDatabase 备份数据库
+  - composer 解析 composer.json 文件
+  - Compress 打包工具
+  - Error 定义错误
+  - FileSystem 文件处理类
+  - InstallCatchMoudle 模块安装
+  - PraseClass 解析类
+  - ProgressBar Cli 模式下的进度条
+  - ScheduleKernel 定时任务调度器
 - `traits` 目录复用类库
 - `validates` 目录存在自定义的验证器
+- `middlewares` 目录存在自定义的中间件
 - `CatchAdmin.php` 获取 catchAdmin 的目录信息
 - `CatchForm.php` 快速生成表单 (前后端项目无用)
 - `CatchResponse.php` 响应
@@ -77,5 +94,4 @@
 - `CatchQuery.php` 替代内置的 Query，可实现自己的一些查询操作
 - `CatchAuth.php` 认证
 
-以上就是对目录结构介绍
 

@@ -5,7 +5,8 @@
     "@vuepress/plugin-google-analytics": "^1.2.0",
     "@vuepress/plugin-medium-zoom": "^1.2.0",
     "@vuepress/plugin-nprogress": "^1.2.0",
-    "vuepress": "^1.2.0"
+    "vuepress": "^1.2.0",
+    "vuepress-plugin-google-adsense": "^0.1.1"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
