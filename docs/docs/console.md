@@ -107,7 +107,17 @@ php think enable:module moduleName
 ```
 php think package:zip module
 ```
-该命令会将文件夹压缩成ZIP包。
+
+## 导出模块初始数据
+:::tip
+用于将模块的表数据导出成seed，可在模块安装时同时导入初始化数据
+:::
+```
+php think create:seed table_name -m moduleName
+```
+##### 参数
+  - table_name 表名称，导出后的seed文件名将自动转为驼峰格式与模型名保持一致
+  - 可选参数 -m modelName 模块名，导出文件将位于该模块的database/seeds目录
 
 ## 模块服务发现
 在 catchAdmin 中使用多模块的时候，必须使用服务发现，保证模块的可用

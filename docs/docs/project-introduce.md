@@ -50,6 +50,10 @@
       |-- command
       |-- event
       |-- exceptions
+      |-- facade
+      |-- generate
+      |-- library
+      |-- middlewares
       |-- traits
       |-- validates
       |-- CatchAdmin.php
@@ -62,11 +66,11 @@
       |-- CatchAuth.php
 ```
 接着来说明一下各个目录的作用。
-- `base` 目录存在一些基类
-- `command` 目录存在 console 命令
-- `event` 目录存在事件
+- `base` 目录存放一些基类
+- `command` 目录存放 console 命令
+- `event` 目录存放事件
 - `exceptions` 目录存放自定义异常类
-- `exceptions` 目录存放自定义 facade 门面
+- `facade` 目录存放自定义 facade 门面
 - `generate` 目录存放文件生成功能
 - `library` 目录存放插件
   - client Http 客户端
@@ -82,9 +86,9 @@
   - PraseClass 解析类
   - ProgressBar Cli 模式下的进度条
   - ScheduleKernel 定时任务调度器
+- `middlewares` 目录存在自定义的中间件
 - `traits` 目录复用类库
 - `validates` 目录存在自定义的验证器
-- `middlewares` 目录存在自定义的中间件
 - `CatchAdmin.php` 获取 catchAdmin 的目录信息
 - `CatchForm.php` 快速生成表单 (前后端项目无用)
 - `CatchResponse.php` 响应
