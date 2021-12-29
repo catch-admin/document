@@ -57,7 +57,7 @@ yarn config set registry https://registry.npm.taobao.org/
 ```
 #### 下载项目
 ```sh
-git clone https://github.com/yanwenwu/catch-admin-vue.git
+git clone https://github.com/JaguarJack/catch-admin-vue.git
 ```
 
 #### 进入目录,使用 yarn 安装
